@@ -25,11 +25,10 @@ const HomeScreen = () => {
       {errMessage ? <Text>{errMessage}</Text> : null}
       <Text>We have found {results.length} results</Text>
 
-      {console.log(results)}
 
       <ResultsList title="Cost Effective" result={FilterByPrice("$")}/>
-      <ResultsList title="Bit Pricer"  result={FilterByPrice("$$")}/>
-      <ResultsList title="Expensive"  result={FilterByPrice("$$$")}/>
+      <ResultsList title="Bit Pricer" result={FilterByPrice("$$")}/>
+      <ResultsList title="Expensive" result={FilterByPrice("$$$")}/>
 
     </View>
   )
